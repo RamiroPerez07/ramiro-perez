@@ -1,0 +1,211 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 0.5px;
+    background-color: #cfcfcf;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+h2{
+    font-size: 25px;
+    text-align: center;
+}
+
+h3{
+    font-size: 20px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+b{
+    color:#001aff;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+li{
+    list-style-position: inside;
+}
+
+main{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    justify-items: stretch;
+    padding: 0 5px 5px 5px;
+    border-radius: 10px;
+}
+
+
+
+section{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: beige;
+}
+
+table{
+    border-collapse: separate;
+    border-spacing: 10px 20px;
+}
+
+
+
+
+/* Main container - Screen Settings */
+
+.container{
+    width: 90%;
+    margin:auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+/* Profile Data Style */
+
+
+.profile-data{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.profile-data-left{
+    margin:20px;
+}
+
+/* Img Style */
+
+.img-profile{
+    width: 400px;
+    border-radius: 10%;
+}
+
+
+.education{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.accolades{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.courses{
+    grid-column: 2/3;
+    grid-row: 2/4;
+}
+
+.skills{
+    grid-column: 1/2;
+    grid-row:3/4
+}
+
+
+.work-experience{
+    grid-column: 1/3;   
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* Media Queries */
+
+
+@media (max-width: 1050px){
+    .img-profile{
+        width: 300px;
+    }
+}
+
+@media (max-width: 800px){
+    .img-profile{
+        width: 260px;
+    }
+}
+
+
+@media (max-width: 750px){
+
+    section{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .profile-data{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .img-profile{
+        order:1;
+        margin-top: 40px;
+    }
+
+    .profile-data-left{
+        order:2;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .education{
+        order:1;
+    }
+
+    .accolades{
+        order:2;
+    }
+
+    .courses{
+        order:3;
+    }
+
+    .skills{
+        order:4;
+    }
+
+    .work-experience{
+        order:5;
+        margin-bottom: 10px;
+    }
+
+}
+
+
+
+
